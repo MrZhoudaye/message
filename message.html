@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>message组件</title>
+    <link rel="stylesheet" href="../message/message.css">
+
+    <style>
+        button{
+            position: fixed;
+            top: 200px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: all 1s;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="showMessage(this)">点击显示message</button>
+
+
+    <script src="../message/message.js"></script>
+    <script>
+
+        // 测试用例
+        function showMessage(obj){
+
+            message({
+                    type:"success",
+                    message:"这是一条提示信息",
+                    // closeBtn:true
+                })
+        }
+
+        message.info("这是一条消息")
+        message.success("这是一条成功消息")
+        message.warning("这是一条警示信息")
+        message.error("这是一条错误信息")
+
+        setTimeout(function(){
+            message({
+                type:"info",
+                message:"sdvgarsvgjdbntdj",
+                duration:"3000"
+            })
+            message({
+                type:"success",
+                message:"sdvgarsvgjdbntdj",
+                closeBtn:true
+            })
+            message({
+                type:"warning",
+                message:"sdvgarsvgjdbntdj",
+                closeBtn:true
+            })
+        },5000)
+    </script>
+</body>
+</html>

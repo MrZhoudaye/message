@@ -1,0 +1,111 @@
+/* main style */
+.message{
+    box-sizing: border-box;
+    min-width: 380px;
+    border-radius: 4px;
+    transition: all 1.5s;
+    position: fixed;
+    left: 50%;
+    top: 0;
+    transform-origin: top center;
+    transform: translateX(-50%) translateY(0);
+    padding: 15px 15px 15px 20px;
+    display: flex;
+    align-items: center;
+    opacity: .4;
+    visibility: hidden;
+}
+/* default */
+.info{
+    background-color: #eaf0fb;
+    border: 1px solid #e8edf7;
+    color: #85888e;
+}
+.info::before{
+    content: "i";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: relative;
+    top: 1px;
+    left: -6px;
+    background-color: #85888e;
+    color:#fff;
+    line-height: 16px;
+    text-align: center;
+}
+/* success */
+.success{
+    background-color: #eef9e9;
+    border: 1px solid #edf8e9;
+    color: #76c75f;
+}
+.success::before{
+    content: "✔";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: relative;
+    top: 1px;
+    left: -6px;
+    background-color: #76c75f;
+    color:#fff;
+    line-height: 16px;
+    text-align: center;
+}
+/* warning */
+.warning{
+    background-color: #fdf4ea;
+    border: 1px solid #fbeedf;
+    color: #e5a560;
+}
+.warning::before{
+    content: "!";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: relative;
+    top: 1px;
+    left: -6px;
+    background-color: #e5a560;
+    color:#fff;
+    line-height: 16px;
+    text-align: center;
+}
+/* error */
+.error{
+    background-color: #feedee;
+    border: 1px solid #fce5e6;
+    color: #f6848f;
+}
+.error::before{
+    content: "✘";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: relative;
+    top: 1px;
+    left: -6px;
+    background-color: #f6848f;
+    color:#fff;
+    line-height: 16px;
+    text-align: center;
+}
+/* close */
+.message-close{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    line-height: 16px;
+}
