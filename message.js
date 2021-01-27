@@ -60,6 +60,16 @@
                 messages[i].style.opacity = "1"
             },500)
         }
+        // 方法二
+        // messages.map((v,i) => {
+        //     ((v,i) => {
+        //         setTimeout(() => {
+        //             v.style.visibility = "visible"
+        //             v.style.transform = "translateX(-50%) translateY(" + 60 * (i + 1) + "px)"
+        //             v.style.opacity = "1"
+        //         }，500)
+        //     })(v,i)
+        // })
     }
 
     // 实现点语法
